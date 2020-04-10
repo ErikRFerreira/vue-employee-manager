@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <navbar appTitle="Employee Manager"></navbar>
+    <!-- 
+         v-on:key="$route.fullPath" re-renders the navbar on login/logout
+      -->
+    <navbar v-on:key="$route.fullPath" appTitle="Employee Manager"></navbar>
     <div class="container">
       <router-view/>
     </div>
